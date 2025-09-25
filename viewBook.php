@@ -30,9 +30,9 @@ $books = $bookObj->viewBooks($search, $genre);
             <input type="search" name="search" id="search" value="<?= htmlspecialchars($search) ?>">
             <select name="genre" id="genre">
                 <option value="">All</option>
-                <option value="Comedy" <?= ($genre == "Comedy") ? "selected" : "" ?>>Comedy</option>
-                <option value="Romance" <?= ($genre == "Romance") ? "selected" : "" ?>>Romance</option>
-                <option value="Fantasy" <?= ($genre == "Fantasy") ? "selected" : "" ?>>Fantasy</option>
+                <option value="History" <?= ($genre == "History") ? "selected" : "" ?>>History</option>
+                <option value="Science" <?= ($genre == "Science") ? "selected" : "" ?>>Science</option>
+                <option value="Fiction" <?= ($genre == "Fiction") ? "selected" : "" ?>>Fiction</option>
             </select>
             <input type="submit" value="Search">
         </form>
@@ -78,4 +78,5 @@ $books = $bookObj->viewBooks($search, $genre);
         </div>
     </div>
 </body>
+
 </html>
